@@ -1,0 +1,272 @@
+:root {
+  --md-primary-fg-color: #cc4533;
+  --md-primary-fg-color--light: #cc4533;
+  --cryptoarm-marging-top: 70px;
+  --cryptoarm-marging-top-sidebar: 88px;
+}
+
+/* Светлая тема */
+@media (prefers-color-scheme: light) {
+  :root {
+    --md-primary-color: #cc4533;
+    --md-accent-color: #cc4533;
+    --md-accent-fg-color: #ffffff;
+  }
+}
+
+/* Тёмная тема */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --md-primary-color: #000000;
+    --md-accent-color: #cc4533;
+    --md-accent-fg-color: #ffffff;
+  }
+}
+
+/* Стили под шаблон cryptoarm */
+
+.md-typeset a:focus,
+.md-typeset a:hover {
+  color: #cc4533;
+}
+
+.md-search-result mark {
+  background-color: initial;
+  color: #cc4533;
+  text-decoration: underline;
+}
+
+.md-search-result__more > summary:focus > div,
+.md-search-result__more > summary:hover > div {
+  background-color: var(--md-accent-fg-color--transparent);
+  color: #cc4533;
+}
+
+.md-header {
+  background-color: #ffffff;
+  box-shadow: 0 0 0.2rem #0000, 0 0.2rem 0.4rem #0000;
+  color: #ffffff;
+}
+
+span.md-nav__icon,
+span.md-ellipsis {
+  color: #313336;
+}
+
+span.md-nav__icon:hover,
+span.md-ellipsis:hover {
+  color: #cc4533;
+}
+
+/* Стили для нижних кнопок навигации - Предыдущая, Следующая*/
+div.nav_button {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  width: 144px;
+}
+
+div.nav_button a {
+  display: inline-block; /* Чтобы можно было применить отступы и границы */
+  padding: 9px 16px 11px; /* Отступы вокруг текста */
+  border: 0.666667px solid #454547; /* Цвет рамки */
+  border-radius: 4px; /* Скругление углов */
+  text-decoration: none; /* Убираем подчеркивание */
+  color: #454547; /* Цвет текста */
+  transition: background-color 0.2s, color 0.2s; /* Плавный переход */
+}
+
+div.nav_button a:hover {
+  background-color: #313336; /* Цвет фона при наведении */
+  color: white; /* Цвет текста при наведении */
+}
+
+.md-breadcrumbs-buttons {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-rigth {
+  float: right;
+}
+
+/*  Стили для строки поиска */
+
+.md-search__form {
+  /*border: 1px solid #CFD1D6;*/
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  /*background: #FFFFFF;*/
+}
+
+.md-search__input {
+  /*background-color: white; /* Белый фон */
+  border: 1px solid #cfd1d6; /* Рамка */
+  color: #313336; /* Черный текст */
+  font-size: 16px; /* Размер шрифта */
+  border-radius: 6px; /* Скругление углов (по желанию) */
+  background: #0000;
+}
+
+.md-icon svg {
+  color: #313336;
+}
+
+.md-search__input:focus {
+  /*outline: none;  Убираем стандартную обводку при фокусе */
+  /*border-color: #CFD1D6; /* Цвет рамки при фокусе (по желанию) */
+}
+
+.md-search__input:hover {
+  outline: none; /* Убираем стандартное обводка при фокусе */
+  border-color: #cfd1d6; /* Цвет рамки при фокусе (по желанию) */
+  background-color: white;
+}
+
+header.md-search-nav {
+  all: unset;
+}
+
+.md-search__form:hover {
+  background-color: var(--md-accent-fg-color);
+}
+
+.md-sidebar,
+.md-search,
+.md-search__inner {
+  padding: unset;
+}
+
+/*  Перенос иконки в правую часть */
+/* [dir="ltr"] .md-search__icon[for="__search"] {
+  left: 10rem;
+} */
+
+@media screen and (min-width: 60em) {
+  .md-search__form {
+    background-color: white;
+    height: 1.8rem;
+  }
+}
+
+:root {
+  /*--md-primary-fg-color: #4051b5;
+  --md-primary-fg-color--light: #5d6cc0;
+  --md-primary-fg-color--dark: #303fa1;
+  --md-primary-bg-color: #fff;*/
+  --md-primary-bg-color--light: black; /* цвет теста в input*/
+  /*--md-accent-fg-color: #526cfe;
+  --md-accent-fg-color--transparent: #526cfe1a;
+  --md-accent-bg-color: #fff;
+  --md-accent-bg-color--light: #ffffffb3;*/
+}
+
+/*  Все остальное */
+.md-header,
+.md-footer,
+.md-container {
+  height: unset;
+  border: unset;
+}
+
+label.md-nav__title[for="__drawer"],
+label.md-nav__link[for="__nav_1"] {
+  display: none;
+}
+
+/* Поиск в nav */
+
+header.md-header {
+  display: none;
+}
+
+.md-header__title {
+  display: none;
+}
+
+nav.md-header__inner {
+  justify-content: space-between;
+}
+
+.md-container {
+  margin-top: var(--cryptoarm-marging-top);
+}
+
+@media only screen and (max-width: 1024px) and (orientation: portrait),
+  only screen and (max-width: 1180px) and (orientation: landscape) {
+  header.md-header {
+    display: block;
+    margin-top: var(--cryptoarm-marging-top);
+  }
+
+  .md-sidebar {
+    margin-top: var(--cryptoarm-marging-top-sidebar);
+  }
+
+  .md-container {
+    margin-top: unset;
+  }
+
+  header.md-search-nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 912px) {
+  .md-search__inner {
+    margin-top: var(--cryptoarm-marging-top-sidebar);
+  }
+}
+
+.md-search__form:hover {
+  background-color: var(--md-accent-fg-color);
+}
+
+.md-sidebar,
+.md-search,
+.md-search__inner {
+  padding: unset;
+}
+
+/* Поиск в nav https://github.com/squidfunk/mkdocs-material/issues/416 */
+
+.md-sidebar {
+  overflow: visible;
+}
+
+.md-sidebar__scrollwrap {
+  overflow-y: scroll;
+  width: 100%;
+  scrollbar-color: var(--md-accent-fg-color--transparent) #0000;
+}
+
+.md-sidebar__scrollwrap:hover {
+  scrollbar-color: var(--md-primary-fg-color) #0000;
+}
+
+[data-md-toggle="search"]:checked ~ .md-container .md-search__output {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12),
+    0 3px 5px -1px rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  overflow: visible;
+  width: auto;
+}
+
+[data-md-toggle="search"]:checked ~ .md-container .md-search__overlay {
+  width: 100%;
+  height: 100%;
+  transition: width 0s, height 0s, opacity 0.25s;
+  opacity: 1;
+}
+
+[data-md-toggle="search"]:checked ~ .md-container .md-search__scrollwrap {
+  max-height: 75vh;
+}

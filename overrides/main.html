@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block site_nav %}
+  <div>
+    {% if "material/search" in config.plugins %}
+      <header class="md-search-nav" data-md-component="header">
+        <!-- <div class="md-flex__cell md-flex__cell--shrink"> -->
+        <label class="md-header__button md-icon" for="__search">
+          {% set icon = config.theme.icon.search or "material/magnify" %}
+          {% include ".icons/" ~ icon ~ ".svg" %}
+        </label>
+        {% include "partials/search.html" %}
+        <!-- </div> -->
+      </header>
+    {% endif %}
+    {{ super() }}
+  </div>
+{% endblock %}
+{% block content %}
+  {{ super() }}
+  <div class="md-breadcrumbs-buttons" role="navigation" aria-label="navigation">
+    {%- if page.previous_page and page.next_page %}
+      <div class="text nav_button">
+        <a href="{{ page.previous_page.url|url }}" class="float-left" title="{{ page.previous_page.title }}">Предыдущая</a>
+      </div>
+      <div class="text nav_button">
+        <a href="{{ page.next_page.url|url }}" class="float-right" title="{{ page.next_page.title }}">Следующая</a>
+      </div>
+    {%- endif %}
+    {%- if page.previous_page and not page.next_page %}
+      <div class="text nav_button">
+        <a href="{{ page.previous_page.url|url }}" class="float-left" title="{{ page.previous_page.title }}">Предыдущая</a>
+      </div>
+      <div></div>
+    {%- endif %}
+    {%- if not page.previous_page and page.next_page %}
+      <div></div>
+      <div class="text nav_button">
+        <a href="{{ page.next_page.url|url }}" class="float-right" title="{{ page.next_page.title }}">Следующая</a>
+      </div>
+    {%- endif %}
+  </div>
+{% endblock %}
+{% block footer %}{# Отключаем footer #}{% endblock %}
