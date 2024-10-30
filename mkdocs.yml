@@ -120,6 +120,9 @@ markdown_extensions:
       linenums: true 
   - pymdownx.highlight:
       linenums_style: pymdownx.inline 
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 
 # Page tree
 nav:

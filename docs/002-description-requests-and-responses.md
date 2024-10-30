@@ -15,6 +15,7 @@ sort: "2"
 **POST-запрос**
 
 КриптоАРМ выполняет HTTP POST-запросы, которые содержат заголовки:
+
 - `Content-Type`: ДОЛЖЕН быть application/json.
 - `Content-Length`: ДОЛЖЕН содержать правильную длину в соответствии с HTTP-спецификацией.
 - `Accept`: ДОЛЖЕН быть application/json.
