@@ -116,6 +116,10 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - pymdownx.highlight:
+      linenums: true 
+  - pymdownx.highlight:
+      linenums_style: pymdownx.inline 
 
 # Page tree
 nav:
