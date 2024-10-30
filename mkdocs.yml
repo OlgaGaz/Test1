@@ -122,8 +122,8 @@ nav:
   - API КриптоАРМ:
       - API КриптоАРМ:
           # 001
-#                 - 001-about.md
-#                 - 002-description-requests-and-responses.md
+          - 001-about.md
+          - 002-description-requests-and-responses.md
 
           # 002
           - Команда signAndEncrypt:
