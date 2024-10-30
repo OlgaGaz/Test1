@@ -134,14 +134,14 @@ nav:
 
           # 002
           - Команда signAndEncrypt:
-              - 01-signAndEncrypt-command-description.md
-              - 02-signAndEncrypt-link-format.md
+              - 002-signAndEncrypt/01-signAndEncrypt-command-description.md
+              - 002-signAndEncrypt/02-signAndEncrypt-link-format.md
               - Описание запросов и ответов:
-                  - 03-signAndEncrypt-requests-description.md
-                  - 04-signAndEncrypt-getting-parameters.md
-                  - 05-sending-result-direct-operations.md
-                  - 06-sending-result-reverse-operations.md
-                  - 07- sending-signature-verification-result.md                                  
+                  - 002-signAndEncrypt/03-signAndEncrypt-requests-description.md
+                  - 002-signAndEncrypt/04-signAndEncrypt-getting-parameters.md
+                  - 002-signAndEncrypt/05-sending-result-direct-operations.md
+                  - 002-signAndEncrypt/06-sending-result-reverse-operations.md
+                  - 002-signAndEncrypt/07-sending-signature-verification-result.md                                  
               - Типы данных:
-                  - 08-ISignAndEncryptParameters.md
-                  - 09-ISignAndEncryptOperationReverse.md
+                  - 002-signAndEncrypt/08-ISignAndEncryptParameters.md
+                  - 002-signAndEncrypt/09-ISignAndEncryptOperationReverse.md
