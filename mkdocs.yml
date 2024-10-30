@@ -127,8 +127,8 @@ nav:
 
           # 002
           - Команда signAndEncrypt:
-                 - 01-signAndEncrypt-command-description.md
-                 - 02-signAndEncrypt-link-format.md
+              - 01-signAndEncrypt-command-description.md
+              - 02-signAndEncrypt-link-format.md
               - Описание запросов и ответов:
                   - 03-signAndEncrypt-requests-description.md
                   - 04-signAndEncrypt-getting-parameters.md
