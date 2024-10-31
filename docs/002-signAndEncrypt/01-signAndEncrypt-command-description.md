@@ -12,5 +12,5 @@ sort: "1"
 
     Выполнение операции требует действующей лицензии на КриптоАРМ.
 
-![Схема](./images/signAndEncrypt.png "Схема")
+![Схема](./images/signAndEncrypt.drawio.png "Схема")
 

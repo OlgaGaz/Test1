@@ -14,7 +14,7 @@ sort: "4"
 | jsonrpc | «2.0» | Версия JSON-RPC протокола. Всегда «2.0». |
 | method | `startView.parameters`|  Используемый метод. Всегда `startView.parameters`. |
 | id |  Уникальный идентификатор | Используется идентификатор, который указан в ссылке на операцию. Подробнее в разделе [Формат ссылки](../002-description-requests-and-responses.md) |
-| diagnostic |  [`IDiagnosticInformaton`](../005-diagnostics/09-IDiagnosticsInformation.md) |  Диагностическая информация о рабочем месте |
+| diagnostic | [`IDiagnosticInformaton`](../005-diagnostics/09-IDiagnosticsInformation.md) |  Диагностическая информация о рабочем месте |
 
 Пример:
 
