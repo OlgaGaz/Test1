@@ -144,4 +144,105 @@ nav:
                   - 002-signAndEncrypt/07-sending-signature-verification-result.md                                  
               - Типы данных:
                   - 002-signAndEncrypt/08-ISignAndEncryptParameters.md
-                  - 002-signAndEncrypt/09-ISignAndEncryptOperationReverse.md
+                  - 002-signAndEncrypt/09-ISignAndEncryptOperationDirect.md   
+                  - 002-signAndEncrypt/10-ISignAndEncryptOperationReverse.md
+                  - 002-signAndEncrypt/11-ISignAndEncryptOperationVerify.md
+                  - 002-signAndEncrypt/12-ISignAndEncryptOperationProps.md 
+                  - 002-signAndEncrypt/13-IFile.md
+                  - 002-signAndEncrypt/14-IExtra.md
+                  - 002-signAndEncrypt/15-IDirectResults.md
+                  - 002-signAndEncrypt/16-IDirectResultOut.md
+                  - 002-signAndEncrypt/17-IReverseResults.md
+                  - 002-signAndEncrypt/18-IReverseResultOut.md
+                  - 002-signAndEncrypt/19-IVerifySignResults.md
+                  - 002-signAndEncrypt/20-IVerifySignResult.md
+                  - 002-signAndEncrypt/21-ISignerStatus.md
+                  - 002-signAndEncrypt/22-ILocalResultParams.md
+                  - 002-signAndEncrypt/23-ISignStampAppearance.md
+                  - 002-signAndEncrypt/24-IMockupSettings.md
+                  - 002-signAndEncrypt/25-IRequisitesSettings.md
+                  - 002-signAndEncrypt/26-IPdfCertRequisite.md
+                  - 002-signAndEncrypt/27-IPdfMarkedArea.md
+          # 003
+          - Команда certificates:
+              - 003-certificates/01-certificates-command-description.md 
+              - 003-certificates/02-certificates-link-format.md
+              - Описание запросов и ответов:
+                - 003-certificates/03-certificates-requests-description.md
+                - 003-certificates/04-certificates-getting-parameters.md
+                - 003-certificates/05-sending-certificate.md
+                - 003-certificates/06-sending-list-certificates.md
+                - 003-certificates/07-sending-certificate-information.md
+              - Типы данных:
+                - 003-certificates/08-ICertificatesParameters.md
+                - 003-certificates/09-ICertificatesOperationProps.md
+                - 003-certificates/10-ICertificateBase64Params.md
+                - 003-certificates/11-ICertificateInfo.md
+                - 003-certificates/12-ICertificateIdentityInfo.md  
+                - 003-certificates/13-interface-for-selecting-and-sending-certificates.md
+          # 004
+          - Команда certrequests:
+              - 004-certrequests/01-certrequests-command-description.md 
+              - 004-certrequests/02-certrequests-link-format.md
+              - Описание запросов и ответов:
+                - 004-certrequests/03-certrequests-requests-description.md
+                - 004-certrequests/04-certrequests-getting-parameters.md
+                - 004-certrequests/05-sending-certificate-request.md
+              - Типы данных:
+                - 004-certrequests/06-ICertrequestsParameters.md
+                - 004-certrequests/07-CertrequestsOperation.md
+                - 004-certrequests/08-ICertrequestsOperationGenerateProps.md
+                - 004-certrequests/09-IJSONTemplate.md
+                - 004-certrequests/10-IRDN.md
+                - 004-certrequests/11-IRequestExtension.md
+                - 004-certrequests/12-IKeyUsage.md
+                - 004-certrequests/13-IExtendedKeyUsage.md
+                - 004-certrequests/14-ICertificateTemplate.md
+                - 004-certrequests/15-ICertificaterequestBase64Params.md
+          # 005
+          - Команда diagnostics:
+              - 005-diagnostics/01-diagnostics-command-description.md 
+              - 005-diagnostics/02-diagnostics-link-format.md
+              - Описание запросов и ответов:
+                - 005-diagnostics/03-diagnostics-requests-description.md
+                - 005-diagnostics/04-diagnostics-getting-parameters.md
+                - 005-diagnostics/05-diagnostics-sending-workspace-information.md
+              - Типы данных:
+                - 005-diagnostics/06-IDiagnosticsParameters.md
+                - 005-diagnostics/07-IDiagnosticOperation.md
+                - 005-diagnostics/08-IDiagnosticsOperationProps.md
+                - 005-diagnostics/09-IDiagnosticsInformation.md
+                - 005-diagnostics/10-ISystemInformation.md
+                - 005-diagnostics/11-IVersions.md
+                - 005-diagnostics/12-IProviders.md
+                - 005-diagnostics/13-ILicenses.md
+                - 005-diagnostics/14-ILicenseInfo.md
+                - 005-diagnostics/15-LicenseType-Enum.md
+          # 006
+          - Команда startView:
+              - 006-startView/01-startView-command-description.md 
+              - 006-startView/02-startView-link-format.md
+              - Описание запросов и ответов:
+                - 006-startView/03-startView-requests-description.md
+                - 006-startView/04-startView-getting-parameters.md
+              - Типы данных:
+                - 006-startView/05-IStartViewParameters.md
+                - 006-startView/06-IStartViewOperationProps.md
+          # 007
+          - Команда mail:
+              - 007-mail/01-mail-command-description.md
+              - 007-mail/02-mail-link-format.md
+              - Описание запросов и ответов:
+                - 007-mail/03-mail-requests-description.md
+                - 007-mail/04-mail-getting-parameters.md
+              - Типы данных:
+                - 007-mail/05-IMailParameters.md
+                - 007-mail/06-IMailOperationProps.md
+                - 007-mail/07-IMailProps.md            
+
+            
+
+
+
+
+

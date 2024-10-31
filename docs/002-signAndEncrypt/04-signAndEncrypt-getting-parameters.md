@@ -12,9 +12,9 @@ sort: "4"
 | Ключ | Значение | Описание |
 | --- | --- | --- |
 | jsonrpc | «2.0» | Версия JSON-RPC протокола. Всегда «2.0». |
-| method |  [ISignAndEncryptParameters](./08-ISignAndEncryptParameters.md) |  Используемый метод. Всегда `signAndEncrypt.parameters`. |
-| id |  Уникальный идентификатор |  Используется идентификатор, который указан в ссылке на операцию. Подробнее в разделе [Формат ссылки](./02-signAndEncrypt-link-format.md) |
-| diagnostic |  IDiagnosticInformaton |  Диагностическая информация о рабочем месте |
+| method | `signAndEncrypt.parameters`|  Используемый метод. Всегда `signAndEncrypt.parameters`. |
+| id |  Уникальный идентификатор | Используется идентификатор, который указан в ссылке на операцию. Подробнее в разделе [Формат ссылки](../002-description-requests-and-responses.md) |
+| diagnostic |  [`IDiagnosticInformaton`](../005-diagnostics/09-IDiagnosticsInformation.md) |  Диагностическая информация о рабочем месте |
 
 Пример:
 
@@ -36,8 +36,8 @@ Accept: application/json
 | Ключ | Значение | Описание |
 | --- | --- | --- |
 | jsonrpc | «2.0» | Версия JSON-RPC протокола. Всегда «2.0». |
-| result |  [ISignAndEncryptParameters](./08-ISignAndEncryptParameters.md) |  Объект со сведениями о параметрах операции подписи |
-| id |  Уникальный идентификатор |  Используется идентификатор, который указан в ссылке на операцию. Подробнее в разделе [Формат ссылки](./02-signAndEncrypt-link-format.md) |
+| result |  [`ISignAndEncryptParameters`](./08-ISignAndEncryptParameters.md) |  Объект со сведениями о параметрах операции подписи |
+| id |  Уникальный идентификатор |  Используется идентификатор, который указан в ссылке на операцию. Подробнее в разделе [Формат ссылки](../002-description-requests-and-responses.md) |
 | appName? |  string |  Необязательный параметр. Используется только для локального API. Если значение передано, то КриптоАРМ отобразит это название в окне подтверждения операции как название стороннего приложения. |
 | apiKey? |  string |  Необязательный параметр. Используется только для локального API. Если значение передано, то КриптоАРМ отобразит это значение в окне подтверждения операции как проверочный код. |
 
@@ -49,8 +49,6 @@ Connection: close
 Content-Length: ...
 Content-Type: application/json
 Date: Sat, 08 Jul 2020 12:04:08 GMT
-
-
 {
     "jsonrpc": "2.0",
     "result": {
@@ -91,5 +89,4 @@ Date: Sat, 08 Jul 2020 12:04:08 GMT
     },
     "id": "2c48eb32-a0a8-405c-ade9-eed130605cba"
 }
-
 ```
