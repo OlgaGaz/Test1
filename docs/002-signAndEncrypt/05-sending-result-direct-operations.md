@@ -14,7 +14,7 @@ sort: "5"
 | --- | --- | --- |
 | jsonrpc | «2.0» | Версия JSON-RPC протокола. Всегда «2.0». |
 | method | `signAndEncrypt.outDirectResults`|  Используемый метод. Всегда `signAndEncrypt.outDirectResults`. |
-| params |  Объект типа `IDirectResults`  |  Сведения о результатах прямой операции |
+| params |  Объект типа [`IDirectResults`](./15-IDirectResults.md) |  Сведения о результатах прямой операции |
 
 Пример:
 

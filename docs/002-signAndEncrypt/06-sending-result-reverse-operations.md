@@ -14,7 +14,7 @@ sort: "6"
 | --- | --- | --- |
 | jsonrpc | «2.0» | Версия JSON-RPC протокола. Всегда «2.0». |
 | method | `signAndEncrypt.outReverseResults`|  Используемый метод. Всегда `signAndEncrypt.outReverseResults`. |
-| params |  Объект типа `IReverseResults`  |  Сведения о результатах обратной операции |
+| params |  Объект типа [`IReverseResults`](./17-IReverseResults.md) |  Сведения о результатах обратной операции |
 
 Пример:
 

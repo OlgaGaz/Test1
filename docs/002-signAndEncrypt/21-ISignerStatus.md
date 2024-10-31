@@ -1,7 +1,7 @@
 ---
 slug: "/post21"
-title: "Интерфейс IVerifySignResult"
-metaTitle: "Интерфейс IVerifySignResult"
+title: "Интерфейс ISignerStatus"
+metaTitle: "Интерфейс ISignerStatus"
 sort: "21"
 ---
 
@@ -10,6 +10,6 @@ sort: "21"
 
 | Свойство | Тип | Описание |
 | --- | --- | --- |
-| signerCertificate | ICertificateInfo | Сведения о сертификате подписчика |
+| signerCertificate | [`ICertificateInfo`](../003-certificates/11-ICertificateInfo.md) | Сведения о сертификате подписчика |
 | isValid | boolean | Статус подписи |
 | signingTime | string | Время подписи |

@@ -18,10 +18,10 @@ sort: "1"
 | --- | --- |
 | [`signAndEncrypt`](./002-signAndEncrypt/01-signAndEncrypt-command-description.md) | выполнение криптографических операций над документами (подпись, шифрование, проверка подписи, расшифрование) |
 | [`certificates`](./003-certificates/01-certificates-command-description.md) |  экспорт или импорт сертификатов, просмотр свойств сертификата |
-| `certrequests` | генерация запросов на сертификат |
-| `diagnostics` | диагностика рабочего места |
-| `startView` | открыть окно или вкладку |
-| `mail` | действия с электронными письмами |
+| [`certrequests`](./004-certrequests/01-certrequests-command-description.md) | генерация запросов на сертификат |
+| [`diagnostics`](./005-diagnostics/01-diagnostics-command-description.md) | диагностика рабочего места |
+| [`startView`](./006-startView/01-startView-command-description.md) | открыть окно или вкладку |
+| [`mail`](./007-mail/01-mail-command-description.md) | действия с электронными письмами |
 
 ---
 ### Cценарий выполнения команд (для взаимодействия с web-приложениями)
