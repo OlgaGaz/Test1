@@ -10,4 +10,4 @@ sort: "1"
 
  Схема взаимодействия:
 
-![Схема](./images/startView.png "Схема")
+![Схема](./images/startView.drawio.png "Схема")
