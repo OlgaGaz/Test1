@@ -1,0 +1,4052 @@
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Test1">
+      
+      
+        <link rel="canonical" href="https://OlgaGaz.github.io/Test1/007-mail/02-mail-link-format/">
+      
+      
+        <link rel="prev" href="../01-mail-command-description/">
+      
+      
+        <link rel="next" href="../03-mail-requests-description/">
+      
+      
+      <link rel="icon" href="../../assets/crypto.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.43">
+    
+    
+      
+        <title>Формат ссылки - (Test)Документация для КриптоАРМ 6</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+sans:300,300i,400,400i,700,700i%7CPT+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"PT sans";--md-code-font:"PT Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href="../.."
+       title="(Test)Документация для КриптоАРМ 6"
+       class="md-header__button md-logo"
+       aria-label="(Test)Документация для КриптоАРМ 6"
+       data-md-component="logo">
+  <img src="../../assets/crypto.png" alt="logo">
+</a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">(Test)Документация для КриптоАРМ 6</span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Формат ссылки
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Поделиться" aria-label="Поделиться" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+  <div>
+    
+      <header class="md-search-nav" data-md-component="header">
+        <!-- <div class="md-flex__cell md-flex__cell--shrink"> -->
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Поделиться" aria-label="Поделиться" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        <!-- </div> -->
+      </header>
+    
+    
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.."
+       title="(Test)Документация для КриптоАРМ 6"
+       class="md-nav__button md-logo"
+       aria-label="(Test)Документация для КриптоАРМ 6"
+       data-md-component="logo">
+  <img src="../../assets/crypto.png" alt="logo">
+</a>
+    (Test)Документация для КриптоАРМ 6
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+    
+
+      
+
+        
+        
+      
+
+      
+      
+         
+        
+        
+        
+        <li class="md-nav__item
+        md-nav__item--active md-nav__item--section md-nav__item--nested">
+          
+            
+            
+            <input
+              class="md-nav__toggle md-toggle "
+              type="checkbox"
+              id="__nav_1"
+              checked
+              />
+              
+                
+                <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+                  <span class="md-nav__icon md-icon"></span>
+                  
+  
+  <span class="md-ellipsis">API КриптоАРМ</span>
+  
+
+
+                </label>
+              
+              <nav class="md-nav"
+                   data-md-level="1"
+                   aria-labelledby="__nav_1_label"
+                   aria-expanded="true">
+                <label class="md-nav__title" for="__nav_1">
+                  <span class="md-nav__icon md-icon"></span>
+                  API КриптоАРМ
+                </label>
+                <ul class="md-nav__list" data-md-scrollfix>
+                  
+
+                    
+                      
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+    
+
+      
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+      
+
+      
+      
+        
+        
+        <li class="md-nav__item
+        md-nav__item--active md-nav__item--nested">
+          
+            
+            
+            <input
+              class="md-nav__toggle md-toggle "
+              type="checkbox"
+              id="__nav_1_1"
+              checked
+              />
+              
+                
+                <label class="md-nav__link" for="__nav_1_1" id="__nav_1_1_label" tabindex="0">
+                  <span class="md-nav__icon md-icon"></span>
+                  
+  
+  <span class="md-ellipsis">API КриптоАРМ</span>
+  
+
+
+                </label>
+              
+              <nav class="md-nav"
+                   data-md-level="2"
+                   aria-labelledby="__nav_1_1_label"
+                   aria-expanded="true">
+                <label class="md-nav__title" for="__nav_1_1">
+                  <span class="md-nav__icon md-icon"></span>
+                  API КриптоАРМ
+                </label>
+                <ul class="md-nav__list" data-md-scrollfix>
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../001-about/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Общее описание</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../002-description-requests-and-responses/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Описание запросов и ответов</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+    
+    
+
+      
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+      
+
+      
+      
+        
+        
+        <li class="md-nav__item md-nav__item--nested">
+          
+            
+            
+            <input
+              class="md-nav__toggle md-toggle "
+              type="checkbox"
+              id="__nav_1_1_3"
+              
+              />
+              
+                
+                <label class="md-nav__link" for="__nav_1_1_3" id="__nav_1_1_3_label" tabindex="0">
+                  <span class="md-nav__icon md-icon"></span>
+                  
+  
+  <span class="md-ellipsis">Команда signAndEncrypt</span>
+  
+
+
+                </label>
+              
+              <nav class="md-nav"
+                   data-md-level="3"
+                   aria-labelledby="__nav_1_1_3_label"
+                   aria-expanded="false">
+                <label class="md-nav__title" for="__nav_1_1_3">
+                  <span class="md-nav__icon md-icon"></span>
+                  Команда signAndEncrypt
+                </label>
+                <ul class="md-nav__list" data-md-scrollfix>
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../002-signAndEncrypt/01-signAndEncrypt-command-description/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Описание</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../002-signAndEncrypt/02-signAndEncrypt-link-format/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Формат ссылки</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+    
+    
+
+      
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+      
+
+      
+      
+        
+        
+        <li class="md-nav__item md-nav__item--nested">
+          
+            
+            
+            <input
+              class="md-nav__toggle md-toggle "
+              type="checkbox"
+              id="__nav_1_1_3_3"
+              
+              />
+              
+                
+                <label class="md-nav__link" for="__nav_1_1_3_3" id="__nav_1_1_3_3_label" tabindex="0">
+                  <span class="md-nav__icon md-icon"></span>
+                  
+  
+  <span class="md-ellipsis">Описание запросов и ответов</span>
+  
+
+
+                </label>
+              
+              <nav class="md-nav"
+                   data-md-level="4"
+                   aria-labelledby="__nav_1_1_3_3_label"
+                   aria-expanded="false">
+                <label class="md-nav__title" for="__nav_1_1_3_3">
+                  <span class="md-nav__icon md-icon"></span>
+                  Описание запросов и ответов
+                </label>
+                <ul class="md-nav__list" data-md-scrollfix>
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../002-signAndEncrypt/03-signAndEncrypt-requests-description/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Общее</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../002-signAndEncrypt/04-signAndEncrypt-getting-parameters/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Получение параметров операции</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../002-signAndEncrypt/05-sending-result-direct-operations/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Отправка результата прямых операций</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../002-signAndEncrypt/06-sending-result-reverse-operations/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Отправка результата обратных операций</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../002-signAndEncrypt/07-sending-signature-verification-result/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Отправка результата проверки подписи</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+                </ul>
+              </nav>
+            
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+    
+    
+
+      
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+      
+
+      
+      
+        
+        
+        <li class="md-nav__item md-nav__item--nested">
+          
+            
+            
+            <input
+              class="md-nav__toggle md-toggle "
+              type="checkbox"
+              id="__nav_1_1_3_4"
+              
+              />
+              
+                
+                <label class="md-nav__link" for="__nav_1_1_3_4" id="__nav_1_1_3_4_label" tabindex="0">
+                  <span class="md-nav__icon md-icon"></span>
+                  
+  
+  <span class="md-ellipsis">Типы данных</span>
+  
+
+
+                </label>
+              
+              <nav class="md-nav"
+                   data-md-level="4"
+                   aria-labelledby="__nav_1_1_3_4_label"
+                   aria-expanded="false">
+                <label class="md-nav__title" for="__nav_1_1_3_4">
+                  <span class="md-nav__icon md-icon"></span>
+                  Типы данных
+                </label>
+                <ul class="md-nav__list" data-md-scrollfix>
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../002-signAndEncrypt/08-ISignAndEncryptParameters/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс ISignAndEncryptParameters</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../002-signAndEncrypt/09-ISignAndEncryptOperationDirect/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Тип ISignAndEncryptOperationDirect</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../002-signAndEncrypt/10-ISignAndEncryptOperationReverse/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Тип ISignAndEncryptOperationReverse</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../002-signAndEncrypt/11-ISignAndEncryptOperationVerify/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Тип ISignAndEncryptOperationVerify</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../002-signAndEncrypt/12-ISignAndEncryptOperationProps/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс ISignAndEncryptOperationProps</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../002-signAndEncrypt/13-IFile/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс IFile</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../002-signAndEncrypt/14-IExtra/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс IExtra</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../002-signAndEncrypt/15-IDirectResults/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс IDirectResults</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../002-signAndEncrypt/16-IDirectResultOut/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс IDirectResultOut</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../002-signAndEncrypt/17-IReverseResults/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс IReverseResults</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../002-signAndEncrypt/18-IReverseResultOut/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс IReverseResultOut</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../002-signAndEncrypt/19-IVerifySignResults/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс IVerifySignResults</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../002-signAndEncrypt/20-IVerifySignResult/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс IVerifySignResult</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../002-signAndEncrypt/21-ISignerStatus/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс ISignerStatus</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../002-signAndEncrypt/22-ILocalResultParams/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс ILocalResultParams</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../002-signAndEncrypt/23-ISignStampAppearance/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс ISignStampAppearance</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../002-signAndEncrypt/24-IMockupSettings/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс IMockupSettings</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../002-signAndEncrypt/25-IRequisitesSettings/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс IRequisitesSettings</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../002-signAndEncrypt/26-IPdfCertRequisite/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс IPdfCertRequisite</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../002-signAndEncrypt/27-IPdfMarkedArea/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс IPdfMarkedArea</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+                </ul>
+              </nav>
+            
+          </li>
+        
+
+      
+                    
+
+                  
+                </ul>
+              </nav>
+            
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+    
+    
+
+      
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+      
+
+      
+      
+        
+        
+        <li class="md-nav__item md-nav__item--nested">
+          
+            
+            
+            <input
+              class="md-nav__toggle md-toggle "
+              type="checkbox"
+              id="__nav_1_1_4"
+              
+              />
+              
+                
+                <label class="md-nav__link" for="__nav_1_1_4" id="__nav_1_1_4_label" tabindex="0">
+                  <span class="md-nav__icon md-icon"></span>
+                  
+  
+  <span class="md-ellipsis">Команда certificates</span>
+  
+
+
+                </label>
+              
+              <nav class="md-nav"
+                   data-md-level="3"
+                   aria-labelledby="__nav_1_1_4_label"
+                   aria-expanded="false">
+                <label class="md-nav__title" for="__nav_1_1_4">
+                  <span class="md-nav__icon md-icon"></span>
+                  Команда certificates
+                </label>
+                <ul class="md-nav__list" data-md-scrollfix>
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../003-certificates/01-certificates-command-description/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Описание</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../003-certificates/02-certificates-link-format/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Формат ссылки</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+    
+    
+
+      
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+      
+
+      
+      
+        
+        
+        <li class="md-nav__item md-nav__item--nested">
+          
+            
+            
+            <input
+              class="md-nav__toggle md-toggle "
+              type="checkbox"
+              id="__nav_1_1_4_3"
+              
+              />
+              
+                
+                <label class="md-nav__link" for="__nav_1_1_4_3" id="__nav_1_1_4_3_label" tabindex="0">
+                  <span class="md-nav__icon md-icon"></span>
+                  
+  
+  <span class="md-ellipsis">Описание запросов и ответов</span>
+  
+
+
+                </label>
+              
+              <nav class="md-nav"
+                   data-md-level="4"
+                   aria-labelledby="__nav_1_1_4_3_label"
+                   aria-expanded="false">
+                <label class="md-nav__title" for="__nav_1_1_4_3">
+                  <span class="md-nav__icon md-icon"></span>
+                  Описание запросов и ответов
+                </label>
+                <ul class="md-nav__list" data-md-scrollfix>
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../003-certificates/03-certificates-requests-description/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Общее</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../003-certificates/04-certificates-getting-parameters/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Получение параметров операции</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../003-certificates/05-sending-certificate/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Отправка сертификата</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../003-certificates/06-sending-list-certificates/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Отправка списка сертификатов</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../003-certificates/07-sending-certificate-information/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Отправка сведений о сертификате</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+                </ul>
+              </nav>
+            
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+    
+    
+
+      
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+      
+
+      
+      
+        
+        
+        <li class="md-nav__item md-nav__item--nested">
+          
+            
+            
+            <input
+              class="md-nav__toggle md-toggle "
+              type="checkbox"
+              id="__nav_1_1_4_4"
+              
+              />
+              
+                
+                <label class="md-nav__link" for="__nav_1_1_4_4" id="__nav_1_1_4_4_label" tabindex="0">
+                  <span class="md-nav__icon md-icon"></span>
+                  
+  
+  <span class="md-ellipsis">Типы данных</span>
+  
+
+
+                </label>
+              
+              <nav class="md-nav"
+                   data-md-level="4"
+                   aria-labelledby="__nav_1_1_4_4_label"
+                   aria-expanded="false">
+                <label class="md-nav__title" for="__nav_1_1_4_4">
+                  <span class="md-nav__icon md-icon"></span>
+                  Типы данных
+                </label>
+                <ul class="md-nav__list" data-md-scrollfix>
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../003-certificates/08-ICertificatesParameters/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс ICertificatesParameters</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../003-certificates/09-ICertificatesOperationProps/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс ICertificatesOperationProps</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../003-certificates/10-ICertificateBase64Params/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс ICertificateBase64Params</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../003-certificates/11-ICertificateInfo/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс ICertificateInfo</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../003-certificates/12-ICertificateIdentityInfo/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс ICertificateIdentityInfos</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../003-certificates/13-interface-for-selecting-and-sending-certificates/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс КриптоАРМ при выборе и отправке сертификатов</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+                </ul>
+              </nav>
+            
+          </li>
+        
+
+      
+                    
+
+                  
+                </ul>
+              </nav>
+            
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+    
+    
+
+      
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+      
+
+      
+      
+        
+        
+        <li class="md-nav__item md-nav__item--nested">
+          
+            
+            
+            <input
+              class="md-nav__toggle md-toggle "
+              type="checkbox"
+              id="__nav_1_1_5"
+              
+              />
+              
+                
+                <label class="md-nav__link" for="__nav_1_1_5" id="__nav_1_1_5_label" tabindex="0">
+                  <span class="md-nav__icon md-icon"></span>
+                  
+  
+  <span class="md-ellipsis">Команда certrequests</span>
+  
+
+
+                </label>
+              
+              <nav class="md-nav"
+                   data-md-level="3"
+                   aria-labelledby="__nav_1_1_5_label"
+                   aria-expanded="false">
+                <label class="md-nav__title" for="__nav_1_1_5">
+                  <span class="md-nav__icon md-icon"></span>
+                  Команда certrequests
+                </label>
+                <ul class="md-nav__list" data-md-scrollfix>
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../004-certrequests/01-certrequests-command-description/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Описание</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../004-certrequests/02-certrequests-link-format/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Формат ссылки</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+    
+    
+
+      
+
+        
+        
+
+        
+        
+
+        
+        
+      
+
+      
+      
+        
+        
+        <li class="md-nav__item md-nav__item--nested">
+          
+            
+            
+            <input
+              class="md-nav__toggle md-toggle "
+              type="checkbox"
+              id="__nav_1_1_5_3"
+              
+              />
+              
+                
+                <label class="md-nav__link" for="__nav_1_1_5_3" id="__nav_1_1_5_3_label" tabindex="0">
+                  <span class="md-nav__icon md-icon"></span>
+                  
+  
+  <span class="md-ellipsis">Описание запросов и ответов</span>
+  
+
+
+                </label>
+              
+              <nav class="md-nav"
+                   data-md-level="4"
+                   aria-labelledby="__nav_1_1_5_3_label"
+                   aria-expanded="false">
+                <label class="md-nav__title" for="__nav_1_1_5_3">
+                  <span class="md-nav__icon md-icon"></span>
+                  Описание запросов и ответов
+                </label>
+                <ul class="md-nav__list" data-md-scrollfix>
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../004-certrequests/03-certrequests-requests-description/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Общее</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../004-certrequests/04-certrequests-getting-parameters/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Получение параметров операции</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../004-certrequests/05-sending-certificate-request/" class="md-nav__link">
+  
+  <span class="md-ellipsis"> Отправка запроса на сертификат</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+                </ul>
+              </nav>
+            
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+    
+    
+
+      
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+      
+
+      
+      
+        
+        
+        <li class="md-nav__item md-nav__item--nested">
+          
+            
+            
+            <input
+              class="md-nav__toggle md-toggle "
+              type="checkbox"
+              id="__nav_1_1_5_4"
+              
+              />
+              
+                
+                <label class="md-nav__link" for="__nav_1_1_5_4" id="__nav_1_1_5_4_label" tabindex="0">
+                  <span class="md-nav__icon md-icon"></span>
+                  
+  
+  <span class="md-ellipsis">Типы данных</span>
+  
+
+
+                </label>
+              
+              <nav class="md-nav"
+                   data-md-level="4"
+                   aria-labelledby="__nav_1_1_5_4_label"
+                   aria-expanded="false">
+                <label class="md-nav__title" for="__nav_1_1_5_4">
+                  <span class="md-nav__icon md-icon"></span>
+                  Типы данных
+                </label>
+                <ul class="md-nav__list" data-md-scrollfix>
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../004-certrequests/06-ICertrequestsParameters/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс ICertrequestsParameters</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../004-certrequests/07-CertrequestsOperation/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Тип CertrequestsOperation</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../004-certrequests/08-ICertrequestsOperationGenerateProps/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс ICertrequestsOperationGenerateProps</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../004-certrequests/09-IJSONTemplate/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс ICertificatesParameters</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../004-certrequests/10-IRDN/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс IRDN</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../004-certrequests/11-IRequestExtension/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс IRequestExtension</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../004-certrequests/12-IKeyUsage/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс IKeyUsage</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../004-certrequests/13-IExtendedKeyUsage/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс IExtendedKeyUsage</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../004-certrequests/14-ICertificateTemplate/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс ICertificatesParameters</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../004-certrequests/15-ICertificaterequestBase64Params/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс ICertificaterequestBase64Params</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+                </ul>
+              </nav>
+            
+          </li>
+        
+
+      
+                    
+
+                  
+                </ul>
+              </nav>
+            
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+    
+    
+
+      
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+      
+
+      
+      
+        
+        
+        <li class="md-nav__item md-nav__item--nested">
+          
+            
+            
+            <input
+              class="md-nav__toggle md-toggle "
+              type="checkbox"
+              id="__nav_1_1_6"
+              
+              />
+              
+                
+                <label class="md-nav__link" for="__nav_1_1_6" id="__nav_1_1_6_label" tabindex="0">
+                  <span class="md-nav__icon md-icon"></span>
+                  
+  
+  <span class="md-ellipsis">Команда diagnostics</span>
+  
+
+
+                </label>
+              
+              <nav class="md-nav"
+                   data-md-level="3"
+                   aria-labelledby="__nav_1_1_6_label"
+                   aria-expanded="false">
+                <label class="md-nav__title" for="__nav_1_1_6">
+                  <span class="md-nav__icon md-icon"></span>
+                  Команда diagnostics
+                </label>
+                <ul class="md-nav__list" data-md-scrollfix>
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../005-diagnostics/01-diagnostics-command-description/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Описание</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../005-diagnostics/02-diagnostics-link-format/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Формат ссылки</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+    
+    
+
+      
+
+        
+        
+
+        
+        
+
+        
+        
+      
+
+      
+      
+        
+        
+        <li class="md-nav__item md-nav__item--nested">
+          
+            
+            
+            <input
+              class="md-nav__toggle md-toggle "
+              type="checkbox"
+              id="__nav_1_1_6_3"
+              
+              />
+              
+                
+                <label class="md-nav__link" for="__nav_1_1_6_3" id="__nav_1_1_6_3_label" tabindex="0">
+                  <span class="md-nav__icon md-icon"></span>
+                  
+  
+  <span class="md-ellipsis">Описание запросов и ответов</span>
+  
+
+
+                </label>
+              
+              <nav class="md-nav"
+                   data-md-level="4"
+                   aria-labelledby="__nav_1_1_6_3_label"
+                   aria-expanded="false">
+                <label class="md-nav__title" for="__nav_1_1_6_3">
+                  <span class="md-nav__icon md-icon"></span>
+                  Описание запросов и ответов
+                </label>
+                <ul class="md-nav__list" data-md-scrollfix>
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../005-diagnostics/03-diagnostics-requests-description/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Общее</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../005-diagnostics/04-diagnostics-getting-parameters/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Получение параметров операции</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../005-diagnostics/05-diagnostics-sending-workspace-information/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Отправка сведений о рабочем месте</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+                </ul>
+              </nav>
+            
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+    
+    
+
+      
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+      
+
+      
+      
+        
+        
+        <li class="md-nav__item md-nav__item--nested">
+          
+            
+            
+            <input
+              class="md-nav__toggle md-toggle "
+              type="checkbox"
+              id="__nav_1_1_6_4"
+              
+              />
+              
+                
+                <label class="md-nav__link" for="__nav_1_1_6_4" id="__nav_1_1_6_4_label" tabindex="0">
+                  <span class="md-nav__icon md-icon"></span>
+                  
+  
+  <span class="md-ellipsis">Типы данных</span>
+  
+
+
+                </label>
+              
+              <nav class="md-nav"
+                   data-md-level="4"
+                   aria-labelledby="__nav_1_1_6_4_label"
+                   aria-expanded="false">
+                <label class="md-nav__title" for="__nav_1_1_6_4">
+                  <span class="md-nav__icon md-icon"></span>
+                  Типы данных
+                </label>
+                <ul class="md-nav__list" data-md-scrollfix>
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../005-diagnostics/06-IDiagnosticsParameters/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс IDiagnosticsParameters</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../005-diagnostics/07-IDiagnosticOperation/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Тип IDiagnosticOperation</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../005-diagnostics/08-IDiagnosticsOperationProps/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс IDiagnosticsOperationProps</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../005-diagnostics/09-IDiagnosticsInformation/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс IDiagnosticsInformation</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../005-diagnostics/10-ISystemInformation/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс ISystemInformation</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../005-diagnostics/11-IVersions/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс IVersions</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../005-diagnostics/12-IProviders/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс IProviders</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../005-diagnostics/13-ILicenses/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс ILicenses</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../005-diagnostics/14-ILicenseInfo/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс ILicenseInfo</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../005-diagnostics/15-LicenseType-Enum/" class="md-nav__link">
+  
+  <span class="md-ellipsis">LicenseType Enum</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+                </ul>
+              </nav>
+            
+          </li>
+        
+
+      
+                    
+
+                  
+                </ul>
+              </nav>
+            
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+    
+    
+
+      
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+      
+
+      
+      
+        
+        
+        <li class="md-nav__item md-nav__item--nested">
+          
+            
+            
+            <input
+              class="md-nav__toggle md-toggle "
+              type="checkbox"
+              id="__nav_1_1_7"
+              
+              />
+              
+                
+                <label class="md-nav__link" for="__nav_1_1_7" id="__nav_1_1_7_label" tabindex="0">
+                  <span class="md-nav__icon md-icon"></span>
+                  
+  
+  <span class="md-ellipsis">Команда startView</span>
+  
+
+
+                </label>
+              
+              <nav class="md-nav"
+                   data-md-level="3"
+                   aria-labelledby="__nav_1_1_7_label"
+                   aria-expanded="false">
+                <label class="md-nav__title" for="__nav_1_1_7">
+                  <span class="md-nav__icon md-icon"></span>
+                  Команда startView
+                </label>
+                <ul class="md-nav__list" data-md-scrollfix>
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../006-startView/01-startView-command-description/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Описание</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../006-startView/02-startView-link-format/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Формат ссылки</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+    
+    
+
+      
+
+        
+        
+
+        
+        
+      
+
+      
+      
+        
+        
+        <li class="md-nav__item md-nav__item--nested">
+          
+            
+            
+            <input
+              class="md-nav__toggle md-toggle "
+              type="checkbox"
+              id="__nav_1_1_7_3"
+              
+              />
+              
+                
+                <label class="md-nav__link" for="__nav_1_1_7_3" id="__nav_1_1_7_3_label" tabindex="0">
+                  <span class="md-nav__icon md-icon"></span>
+                  
+  
+  <span class="md-ellipsis">Описание запросов и ответов</span>
+  
+
+
+                </label>
+              
+              <nav class="md-nav"
+                   data-md-level="4"
+                   aria-labelledby="__nav_1_1_7_3_label"
+                   aria-expanded="false">
+                <label class="md-nav__title" for="__nav_1_1_7_3">
+                  <span class="md-nav__icon md-icon"></span>
+                  Описание запросов и ответов
+                </label>
+                <ul class="md-nav__list" data-md-scrollfix>
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../006-startView/03-startView-requests-description/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Общее</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../006-startView/04-startView-getting-parameters/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Получение параметров операции</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+                </ul>
+              </nav>
+            
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+    
+    
+
+      
+
+        
+        
+
+        
+        
+      
+
+      
+      
+        
+        
+        <li class="md-nav__item md-nav__item--nested">
+          
+            
+            
+            <input
+              class="md-nav__toggle md-toggle "
+              type="checkbox"
+              id="__nav_1_1_7_4"
+              
+              />
+              
+                
+                <label class="md-nav__link" for="__nav_1_1_7_4" id="__nav_1_1_7_4_label" tabindex="0">
+                  <span class="md-nav__icon md-icon"></span>
+                  
+  
+  <span class="md-ellipsis">Типы данных</span>
+  
+
+
+                </label>
+              
+              <nav class="md-nav"
+                   data-md-level="4"
+                   aria-labelledby="__nav_1_1_7_4_label"
+                   aria-expanded="false">
+                <label class="md-nav__title" for="__nav_1_1_7_4">
+                  <span class="md-nav__icon md-icon"></span>
+                  Типы данных
+                </label>
+                <ul class="md-nav__list" data-md-scrollfix>
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../006-startView/05-IStartViewParameters/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс IStartViewParameters</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../../006-startView/06-IStartViewOperationProps/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс IStartViewOperationProps</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+                </ul>
+              </nav>
+            
+          </li>
+        
+
+      
+                    
+
+                  
+                </ul>
+              </nav>
+            
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+    
+
+      
+
+        
+        
+
+        
+        
+
+        
+        
+
+        
+        
+      
+
+      
+      
+        
+        
+        <li class="md-nav__item
+        md-nav__item--active md-nav__item--nested">
+          
+            
+            
+            <input
+              class="md-nav__toggle md-toggle "
+              type="checkbox"
+              id="__nav_1_1_8"
+              checked
+              />
+              
+                
+                <label class="md-nav__link" for="__nav_1_1_8" id="__nav_1_1_8_label" tabindex="0">
+                  <span class="md-nav__icon md-icon"></span>
+                  
+  
+  <span class="md-ellipsis">Команда mail</span>
+  
+
+
+                </label>
+              
+              <nav class="md-nav"
+                   data-md-level="3"
+                   aria-labelledby="__nav_1_1_8_label"
+                   aria-expanded="true">
+                <label class="md-nav__title" for="__nav_1_1_8">
+                  <span class="md-nav__icon md-icon"></span>
+                  Команда mail
+                </label>
+                <ul class="md-nav__list" data-md-scrollfix>
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../01-mail-command-description/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Описание</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+    
+  
+
+  
+
+  
+          <li class="md-nav__item
+        md-nav__item--active">
+            
+            <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc" />
+            
+            
+
+            
+            <a href="./" class="md-nav__link md-nav__link--active">
+              
+  
+  <span class="md-ellipsis">Формат ссылки</span>
+  
+
+
+            </a>
+            
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+    
+    
+
+      
+
+        
+        
+
+        
+        
+      
+
+      
+      
+        
+        
+        <li class="md-nav__item md-nav__item--nested">
+          
+            
+            
+            <input
+              class="md-nav__toggle md-toggle "
+              type="checkbox"
+              id="__nav_1_1_8_3"
+              
+              />
+              
+                
+                <label class="md-nav__link" for="__nav_1_1_8_3" id="__nav_1_1_8_3_label" tabindex="0">
+                  <span class="md-nav__icon md-icon"></span>
+                  
+  
+  <span class="md-ellipsis">Описание запросов и ответов</span>
+  
+
+
+                </label>
+              
+              <nav class="md-nav"
+                   data-md-level="4"
+                   aria-labelledby="__nav_1_1_8_3_label"
+                   aria-expanded="false">
+                <label class="md-nav__title" for="__nav_1_1_8_3">
+                  <span class="md-nav__icon md-icon"></span>
+                  Описание запросов и ответов
+                </label>
+                <ul class="md-nav__list" data-md-scrollfix>
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../03-mail-requests-description/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Общее</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../04-mail-getting-parameters/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Получение параметров операции</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+                </ul>
+              </nav>
+            
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+    
+    
+
+      
+
+        
+        
+
+        
+        
+
+        
+        
+      
+
+      
+      
+        
+        
+        <li class="md-nav__item md-nav__item--nested">
+          
+            
+            
+            <input
+              class="md-nav__toggle md-toggle "
+              type="checkbox"
+              id="__nav_1_1_8_4"
+              
+              />
+              
+                
+                <label class="md-nav__link" for="__nav_1_1_8_4" id="__nav_1_1_8_4_label" tabindex="0">
+                  <span class="md-nav__icon md-icon"></span>
+                  
+  
+  <span class="md-ellipsis">Типы данных</span>
+  
+
+
+                </label>
+              
+              <nav class="md-nav"
+                   data-md-level="4"
+                   aria-labelledby="__nav_1_1_8_4_label"
+                   aria-expanded="false">
+                <label class="md-nav__title" for="__nav_1_1_8_4">
+                  <span class="md-nav__icon md-icon"></span>
+                  Типы данных
+                </label>
+                <ul class="md-nav__list" data-md-scrollfix>
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../05-IMailParameters/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс IMailParameters</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../06-IMailOperationProps/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс IMailOperationProps</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+
+                    
+                      
+
+  
+
+  
+
+  
+
+  
+          <li class="md-nav__item">
+            <a href="../07-IMailProps/" class="md-nav__link">
+  
+  <span class="md-ellipsis">Интерфейс IMailProps</span>
+  
+
+</a>
+          </li>
+        
+
+      
+                    
+
+                  
+                </ul>
+              </nav>
+            
+          </li>
+        
+
+      
+                    
+
+                  
+                </ul>
+              </nav>
+            
+          </li>
+        
+
+      
+                    
+
+                  
+                </ul>
+              </nav>
+            
+          </li>
+        
+
+      
+                    
+
+                  
+                </ul>
+              </nav>
+            
+          </li>
+        
+
+      
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+  </div>
+
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+  
+                  
+
+
+  <h1>Формат ссылки</h1>
+
+<p>Для выполнения команды <code>mail</code> должна быть сформирована ссылка вида:</p>
+<div class="highlight"><pre><span></span><code>cryptoarm://mail/&lt;URL&gt;/?id=&lt;id&gt;
+</code></pre></div>
+<ul>
+<li>
+<p><code>cryptoarm://</code> - зарегистрированный протокол</p>
+</li>
+<li>
+<p><code>mail</code> - выполняемая команда</p>
+</li>
+<li>
+<p><code>&lt;URL&gt;</code> - ссылка, на которую КриптоАРМ будет слать запросы</p>
+</li>
+<li>
+<p><code>id</code> - уникальный идентификатор транзакции</p>
+</li>
+</ul>
+<p>Пример:</p>
+<div class="highlight"><pre><span></span><code>cryptoarm://mail/https://example.com/json?id=2c48eb32-a0a8-405c-ade9-eed130605cba
+</code></pre></div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+  <div class="md-breadcrumbs-buttons" role="navigation" aria-label="navigation">
+      <div class="text nav_button">
+        <a href="../01-mail-command-description/" class="float-left" title="Описание">Предыдущая</a>
+      </div>
+      <div class="text nav_button">
+        <a href="../03-mail-requests-description/" class="float-right" title="Общее">Следующая</a>
+      </div>
+  </div>
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "navigation.tracking", "navigation.indexes", "navigation.sections", "search.highlight", "search.share", "search.suggest", "toc.follow", "toc.integrate"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
