@@ -10,4 +10,4 @@ sort: "1"
 
 Схема взаимодействия (экспорт сертификатов):
 
-![Схема](./images/certrequests.png "Схема")
+![Схема](./images/certrequests.drawio.png "Схема")
