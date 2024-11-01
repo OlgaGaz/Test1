@@ -13,7 +13,7 @@ sort: "7"
 | --- | --- | --- |
 | jsonrpc | «2.0» | Версия JSON-RPC протокола. Всегда «2.0». |
 | method | `signAndEncrypt.verifySignResults`|  Используемый метод. Всегда `signAndEncrypt.verifySignResults`. |
-| params |  Объект типа [`IVerifySignResults`](./20-IVerifySignResults.md)  |  Сведения о проверке подписи |
+| params |  Объект типа [`IVerifySignResults`](./20-IVerifySignResult.md)  |  Сведения о проверке подписи |
 
 Пример:
 
